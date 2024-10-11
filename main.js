@@ -1,97 +1,104 @@
-function calculoSoma() {
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let arr = [];
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++;
-    }
-    let sum = arr.reduce((total, currentValue) => total + currentValue, 0);
-    alert(`A soma dos valores do array é: ${sum}`);
+function exercicio1(array) {
+
+  let soma = 0;
+
+  for (let contador = 0; contador < array.length; contador++) {
+
+      soma = soma + array[contador]
+
   }
-  function numeroMaior(){
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let arr = [];
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++;
-    }
-        maior =  Math.max(...arr);
-    alert(`O maior valor é: ${maior}`);
-  }
-  function contadorNumeroPar() {
-    let quant = 0;
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let arr = [];
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++;
-    }
-    for (i = 0; i < arr.length; i++) {
-      if (arr[i] % 2 === 0) {
-        quant++;
+
+  return soma;
+
+
+
+}
+
+function exercicio2(lista_numeros) {
+
+  let numero_maior = lista_numeros[0];
+
+  for (let contador = 0; contador < lista_numeros.length; contador++) {
+
+      if (lista_numeros[contador] > numero_maior) {
+
+          numero_maior = lista_numeros[contador];
+
       }
-    }
-    if(quant > 0){
-    alert(`Há ${quant} numeros pares no array`);
-  }else{
-    alert(`Não há numeros pares no array`);
+
   }
+
+  return numero_maior;
+
+}
+
+function exercicio3(lista_numeros) {
+
+  let quantidade = 0;
+
+  for (let contador = 0; contador < lista_numeros.length; contador++) {
+
+      if (lista_numeros[contador] % 2 == 0) {
+
+          quantidade++;
+
+      }
+
   }
-  function calculoMedia() {
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let arr = [];
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++;
-    }
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
-    }
-    media = sum / arr.length;
-    alert(`A média dos valores do array é: ${media.toFixed(2)}`);
+
+  return quantidade;
+
+}
+
+function exercicio4(lista_numero) {
+
+  let media = 0;
+
+  let soma = 0;
+
+  for (let contador = 0; contador < lista_numero.length; contador++) {
+
+      soma = (soma + lista_numero[contador])
+
   }
-  function countPositivosNegativos() {
-    let positivos = 0;
-    let negativos = 0;
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let arr = [];
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++;
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] >= 0) {
-        positivos++;
+
+  media = soma / lista_numero.length
+
+  return media;
+
+
+
+}
+
+function exercicio5(lista_numero) {
+
+  let quantidade_positivo = 0
+
+  let quantidade_negativo = 0
+
+  for (let contador = 0; contador < lista_numero.length; contador++) {
+
+      if (lista_numero[contador] >= 0) {
+
+          quantidade_positivo++
+
       } else {
-        negativos++;
+
+          quantidade_negativo++
+
       }
-    }
-    }
-    alert(`Numeros Positivos: ${positivos}`);
-    alert(`Numeros Negativos: ${negativos}`);
-  
+
   }
-  function multiplicaArray() {
-    let arr = [];
-    let n = parseInt(prompt("Quantos valores serão digitados ? "));
-    let i = 0;
-    while (i < n) {
-      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
-      arr.push(value);
-      i++; 
-    for (let i = 0; i < arr.length; i++) {
-      arr.push(arr[i] * num);
-        }
-    }
-    alert(arr);
-  }
+
+  console.log( `quantidade negativos ${quantidade_negativo}, quantidade positivos ${quantidade_positivo}`)
+
+  return quantidade_negativo, quantidade_positivo
+
+}
+
+function exercicio6(lista_numero, numero_multiplicador) {
+
+
+
+  for (let contador
+
