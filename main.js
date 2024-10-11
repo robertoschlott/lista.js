@@ -108,10 +108,8 @@ function exercicio6(lista_numero, numero_multiplicador) {
 
   return lista_numero
 
-
-
-
-  }
+  
+}
 
 
  
