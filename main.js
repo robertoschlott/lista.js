@@ -98,8 +98,6 @@ function exercicio5(lista_numero) {
 
 function exercicio6(lista_numero, numero_multiplicador) {
 
-
-
   for (let contador = 0; contador < lista_numero.length; contador++) {
     
     lista_numero[contador] = lista_numero[contador] * numero_multiplicador
@@ -108,7 +106,7 @@ function exercicio6(lista_numero, numero_multiplicador) {
 
   return lista_numero
 
-  
+
 }
 
 
