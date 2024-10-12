@@ -1,3 +1,5 @@
+//Exercicio 1
+
 function exercicio1(array) {
 
   let soma = 0;
@@ -13,6 +15,8 @@ function exercicio1(array) {
 
 
 }
+
+//Exercicio 2
 
 function exercicio2(lista_numeros) {
 
@@ -32,6 +36,8 @@ function exercicio2(lista_numeros) {
 
 }
 
+//Exercicio 3
+
 function exercicio3(lista_numeros) {
 
   let quantidade = 0;
@@ -50,6 +56,8 @@ function exercicio3(lista_numeros) {
 
 }
 
+//Exercicio 4
+
 function exercicio4(lista_numero) {
 
   let media = 0;
@@ -65,10 +73,11 @@ function exercicio4(lista_numero) {
   media = soma / lista_numero.length
 
   return media;
-
-
+  
 
 }
+
+//Exercicio 5
 
 function exercicio5(lista_numero) {
 
@@ -95,6 +104,8 @@ function exercicio5(lista_numero) {
   return quantidade_negativo, quantidade_positivo
 
 }
+
+//Exercicio 6
 
 function exercicio6(lista_numero, numero_multiplicador) {
 
